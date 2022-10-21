@@ -1,0 +1,24 @@
+{
+	"name": "DelimitedText01",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage02",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "Emptable.csv",
+				"container": "newinput"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
